@@ -1,0 +1,30 @@
+{
+  "name": "quiz",
+  "description": "A simple quiz in Next.js & TailwindCSS",
+  "version": "1.0.0",
+  "license": "MIT",
+  "type": "module",
+  "author": {
+    "name": "Arthur Barbosa",
+    "email": "guevara.arthur@proton.me",
+    "url": "https://arthurbbarbosa.github.io/arthurbbarbosa"
+  },
+  "scripts": {
+    "start": "next start",
+    "dev": "next dev",
+    "build": "next build",
+    "lint": "prettier --write ."
+  },
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.1.5",
+    "next": "^15.3.1",
+    "postcss": "^8.5.3",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "tailwindcss": "^4.1.5"
+  },
+  "devDependencies": {
+    "prettier": "^3.5.3",
+    "prettier-plugin-tailwindcss": "^0.6.11"
+  }
+}

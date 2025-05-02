@@ -1,0 +1,42 @@
+@import url('https://use.typekit.net/wkd6auc.css');
+@import 'tailwindcss';
+
+body {
+  font-family: 'playfair-display', serif;
+}
+
+@theme {
+  --animate-fade-in: fade-in 1s forwards;
+  --animate-fade-out: fade-out 1s forwards;
+  --animate-fall-spin: fall-spin 7s linear;
+
+  @keyframes fade-in {
+    from {
+      clip-path: inset(0 0 0 100%);
+    }
+    to {
+      clip-path: inset(0 0 0 0);
+    }
+  }
+
+  @keyframes fade-out {
+    from {
+      clip-path: inset(0 0 0 0);
+    }
+    to {
+      clip-path: inset(0 0 0 100%);
+    }
+  }
+
+  @keyframes fall-spin {
+    0% {
+      transform: translateY(-50px) rotate(0deg);
+      opacity: 1;
+    }
+
+    100% {
+      transform: translateY(110vh) rotate(360deg);
+      opacity: 0;
+    }
+  }
+}
